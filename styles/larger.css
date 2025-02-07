@@ -149,7 +149,19 @@
     .list section {
         margin: 0 10px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 2rem;
+        height: 300px;
+    }
+
+    .list section p, .list section a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .list img {
+        display: block;
     }
 }

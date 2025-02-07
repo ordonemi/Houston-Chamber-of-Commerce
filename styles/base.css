@@ -459,10 +459,11 @@ form button {
 
 .list section {
     padding: 2rem;
+    text-align: center;
 }
 
 .list img {
-    display: none;
+    display: block;
 }
 
 .list p {
