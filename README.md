@@ -19,4 +19,4 @@ This project is a **Chamber of Commerce website** designed to meet web developme
 - **JavaScript** – For interactive elements and behavior.
 
 ### Live Website
-[Houston Chamber of Commerce]()
+[Houston Chamber of Commerce](https://ordonemi.github.io/Houston-Chamber-of-Commerce/)
