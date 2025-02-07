@@ -1,0 +1,155 @@
+@media screen and (min-width: 1500px){
+
+    header img {
+        width: fit-content;
+    }
+
+    .navigation {
+        flex-direction: row;
+        padding: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation li a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .hero img{
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1.2fr;
+        grid-gap: 10px;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #spotlights {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #spotlights section:nth-child(2) {
+        padding: 0;
+    }
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .hero button {
+        position: absolute;
+        top: 40px;
+        right: 43%;
+        font-size: xx-large;
+    }
+
+    /* DISCOVER PAGE HTML */
+
+    #discover {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% auto;
+        column-gap: 10px;
+    }
+
+    .sidebar-box {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    #images {
+        grid-column: 2/3;
+        border: solid 1px black;
+    }
+
+    #images img {
+        width: auto;
+    }
+
+    #images img:hover {
+        box-shadow: 0 0 20px #ff7e1b;
+    }
+
+    /* JOIN PAGE HTML */
+    
+    #join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        margin: 10px auto;
+        column-gap: 10px;
+    }
+
+    textarea {
+        width: 35rem;
+    }
+    
+    label {
+        font-size: x-large;
+        width: 30rem;
+    }
+    
+    input {
+        width: 30rem;
+        font-size: x-large;
+    }
+
+    #membership-levels {
+        margin-bottom: 0;
+    }
+
+    /* thankyou.html */
+
+    #thankyou section {
+        padding-top: 10rem;
+        padding-bottom: 23rem;
+    }
+
+    /* directory.html */
+
+    #directory div {
+        padding: 2rem 0;
+    }
+
+    #directory div button {
+        font-size: xx-large;
+        margin: 0 1.4rem;
+    }
+
+    #display section {
+        margin-bottom: 0;
+    }
+
+    .grid {
+        margin: 0 10px;
+    }
+
+    .list section {
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 2rem;
+    }
+}

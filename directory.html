@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The directory page for the Houston Chamber of Commerce">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Houston Chamber of Commerce Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://houston.culturemap.com/media-library/houston-aerial-skyline-with-traffic-on-the-highway.jpg?id=31480479&width=2000&height=1500&quality=85&coordinates=55%2C0%2C55%2C0">
+    <meta property="url" content="https://ordonemi.github.io/wdd230/chamber/directory.html">
+    <title>Directory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/switchLayout.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <button id="dark-mode">DARK</button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a class="active" href="#">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="directory">
+        <div id="options">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <section class="grid" id="display">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id='currentYear'></span> Emilio Ordonez Guerrero | Chamber Project WDD 230 | Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

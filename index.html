@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The home page for the Houston Chamber of Commerce">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Houston Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://houston.culturemap.com/media-library/houston-aerial-skyline-with-traffic-on-the-highway.jpg?id=31480479&width=2000&height=1500&quality=85&coordinates=55%2C0%2C55%2C0">
+    <meta property="url" content="https://ordonemi.github.io/wdd230/chamber/index.html">
+    <title>Houston Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/hideBanner.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <button id="dark-mode">DARK</button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 800px)">
+                <img src="images/hero.webp" alt="View of Downtown Houston" width="1500" height="922">
+            </picture>
+            <button id="join-today">Join Today!</button>
+        </div>
+        <section id="banner">
+            <button id="banner-button"></button>
+            <h2>Don't forget to attend the chamber of commerce meet and greet this Wednesday at 7:00 pm!</h2>
+        </section>
+        <div class="cards">
+            <section class="welcome-card">
+                <h2>Welcome to Houston: Where Opportunity Meets Innovation  </h2>
+                <img src="images/houston.webp" alt="Houston Spotlight">
+                <p>
+                    Nestled in the heart of the Lone Star State, Houston, Texas, is a city unlike any other. 
+                    As the fourth-largest city in the United States, Houston boasts a dynamic blend of diverse cultures, vibrant industries, and a unique Southern charm that sets it apart. 
+                    Our Houston Chamber of Commerce is proud to be your gateway to this thriving metropolis, providing you with the resources, connections, and support you need to thrive in our community.
+                </p>
+            </section>
+            <section id="info">
+                <section class="card">
+                    <h2>Weather</h2>
+                    <img id="weather-icon" src="#" alt="Weather icon">
+                    <p><span id="temperature"></span></p>
+                    <p>Wind Speed:<span id="windspeed"></span> mph</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                    <section id="forecast">
+                        <section>
+                            <h3><span id="first-date"></span></h3>
+                            <img id="first-icon" src="#" alt="Weather icon">
+                            <p><span id="today"></span></p>
+                        </section>
+                        <section>
+                            <h3><span id="second-date"></span></h3>
+                            <img id="second-icon" src="#" alt="Weather icon">
+                            <p><span id="tomorrow"></span></p>
+                        </section>
+                        <section>
+                            <h3><span id="third-date"></span></h3>
+                            <img id="third-icon" src="#" alt="Weather icon">
+                            <p><span id="thirdDay"></span></p>
+                        </section>
+                    </section>
+                </section>
+                <section class="card">
+                    <h2>Upcoming Events</h2>
+                    <p>October 29th - Houston Soul Food Festival</p>
+                    <p>November 4th - Utopia Fall Reggae Fest</p>
+                    <p>November 28th - Texas Small Business Expo</p>
+                    <p>November 30th - Houston Career Fair</p>
+                    <a href="https://www.eventbrite.com/d/tx--houston/all-events/" target="_blank">Click Here to find more events!</a>
+                </section>
+            </section>
+        </div>
+        <div id="spotlights">
+            <section>
+                <h3>The Space Center Houston</h3>
+                <p>Space Center Houston is the official visitor center for NASA's Johnson Space Center. 
+                    It offers a fascinating and interactive experience that educates visitors about space exploration, NASA's missions, and the history of the U.S. space program. 
+                    Visitors can explore exhibits, astronaut encounters, and even take a tram tour to get a behind-the-scenes look at the NASA facility.
+                </p>
+            </section>
+            <section>
+                <h3>Killen's BBQ</h3>
+                <p>Killen's BBQ is a Texas barbecue institution located in Pearland, a suburb of Houston.  
+                    The restaurant offers a mouthwatering array of barbecue classics, including brisket, ribs, sausage, and smoked turkey, all cooked to perfection.
+                    Killen's BBQ has earned a loyal following not only in Houston but across the state and even nationally. 
+                    It's a must-visit spot for barbecue enthusiasts seeking authentic Texas flavor.
+                </p>
+            </section>
+            <section>
+                <h3>Urban Harvest Farmers Market</h3>
+                <p>The Urban Harvest Farmers Market is one of the largest and most popular farmers' markets in Houston. 
+                    It offers a wide variety of fresh, locally grown produce, artisanal products, baked goods, and more. 
+                    This market is known for promoting sustainable agriculture and supporting local farmers, making it a great place to explore and purchase high-quality, locally sourced products. 
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id='currentYear'></span> Emilio Ordonez Guerrero | Chamber Project WDD 230 | Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

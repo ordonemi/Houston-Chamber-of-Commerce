@@ -1,0 +1,67 @@
+{
+    "businesses":[
+        {
+            "name":"Brisket & Rice",
+            "address":"13111 Farm to Market Rd 529, Houston, TX 77041",
+            "phoneNum":"(713) 936-9575",
+            "website":"https://brisketnrice.com/",
+            "image":"images/brisket-rice.webp",
+            "membership":"Gold",
+            "type":"food"
+        },
+        {
+            "name":"Killen's Barbecue",
+            "address":"3613 E Broadway St, Pearland, TX 77581",
+            "phoneNum":"(281) 485-2272",
+            "website":"https://www.killensbarbecue.com/",
+            "image":"images/killens.webp",
+            "membership":"Silver",
+            "type":"food"
+        },
+        {
+            "name":"Urban Harvest Farmers Market",
+            "address":"2752 Buffalo Speedway, Houston, TX 77027",
+            "phoneNum":"(713) 880-5540",
+            "website":"https://www.urbanharvest.org/",
+            "image":"images/urban-farmers-market.webp",
+            "membership":"Non-Profit",
+            "type":"Non-Profit"
+        },
+        {
+            "name":"Space Center Houston",
+            "address":"1601 E NASA Pkwy, Houston, TX 77058",
+            "phoneNum":"(281) 244-2100",
+            "website":"https://www.spacecenter.org/",
+            "image":"images/space-center.webp",
+            "membership":"Gold",
+            "type":"Museum"
+        },
+        {
+            "name":"Houston Zoo",
+            "address":"6200 Hermann Park Dr, Houston, TX 77030",
+            "phoneNum":"(713) 533-6500",
+            "website":"https://www.houstonzoo.org/",
+            "image":"images/houston-zoo.webp",
+            "membership":"Bronze",
+            "type":"Zoo"
+        },
+        {
+            "name":"The Galleria",
+            "address":"5085 Westheimer Rd, Houston, TX 77056",
+            "phoneNum":"(713) 622-0663",
+            "website":"https://www.simon.com/mall/the-galleria",
+            "image":"images/galleria.webp",
+            "membership":"Gold",
+            "type":"Mall"
+        },
+        {
+            "name":"Xochi",
+            "address":"1777 Walker St, Houston, TX 77010",
+            "phoneNum":"(713) 400-3330",
+            "website":"https://www.xochihouston.com/",
+            "image":"images/xochi.webp",
+            "membership":"Bronze",
+            "type":"food"
+        }
+    ]
+}

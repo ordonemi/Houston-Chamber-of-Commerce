@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The join page for the Houston Chamber of Commerce">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Houston Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://houston.culturemap.com/media-library/houston-aerial-skyline-with-traffic-on-the-highway.jpg?id=31480479&width=2000&height=1500&quality=85&coordinates=55%2C0%2C55%2C0">
+    <meta property="url" content="https://ordonemi.github.io/wdd230/chamber/join.html">
+    <title>Join</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <button id="dark-mode">DARK</button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active" href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main id="join">
+        <form action="thankyou.html" method="get">
+            <fieldset>
+            <label>First Name:<input id="first-name" name="first-name" type="text" required></label>
+            <label>Last Name:<input id="last-name" name="last-name" type="text" required></label>
+            <label>Title or Position:<input id="title" name="title" type="text" required pattern="[A-Za-z -]{7,}"></label>
+            <label>Email:<input id="email" name="email" type="email" placeholder="example@gmail.com" required></label>
+            <label>Mobile Phone:<input name="phone" id="phone" type="tel" required></label>
+            <label>Business/Organization Name:<input name="business" id="business" type="text" required></label>
+            <label>Membership Level:</label>
+            <input type="radio" id="nonprofit" name="nonprofit" value="Non-Profit">
+            <label class="radio" for="nonprofit">Non-Profit</label><br>
+            <input type="radio" id="bronze" name="bronze" value="Bronze">
+            <label class="radio" for="bronze">Bronze</label><br>
+            <input type="radio" id="silver" name="silver" value="Silver">
+            <label class="radio" for="silver">Silver</label><br>
+            <input type="radio" id="gold" name="gold" value="Gold">
+            <label class="radio" for="gold">Gold</label><br>
+            <label>Description:<textarea name="description" id="description"></textarea></label>
+            <label><input type="hidden" name="timestamp" id="timestamp"></label>
+            <button type="submit">Join the Chamber!</button>
+            </fieldset>
+        </form>
+        <section id="membership-levels">
+            <h1>Membership Levels</h1>
+            <h2>NP Membership</h2>
+            <ul>
+                <li>For non-profit organizations membership is free. No fees due.</li>
+            </ul>
+            <h2>Bronze Membership</h2>
+            <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+            </ul>
+            <h2>Silver Membership</h2>
+            <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+            </ul>
+            <h2>Gold Membership</h2>
+            <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per quarter</li>
+                <li>Fee of $250/month</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id='currentYear'></span> Emilio Ordonez Guerrero | Chamber Project WDD 230 | Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

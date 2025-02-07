@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The discover page for the Houston Chamber of Commerce">
+    <meta name="author" content="Emilio Ordonez Guerrero">
+    <meta property="og:title" content="Houston Chamber of Commerce Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="image" content="https://houston.culturemap.com/media-library/houston-aerial-skyline-with-traffic-on-the-highway.jpg?id=31480479&width=2000&height=1500&quality=85&coordinates=55%2C0%2C55%2C0">
+    <meta property="url" content="https://ordonemi.github.io/wdd230/chamber/discover.html">
+    <title>Discover</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/darkMode.js" defer></script>
+    <script src="scripts/daysSinceLastVisit.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="logo">
+        <button id="dark-mode">DARK</button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main id="discover">
+        <section id="sidebar">
+            <section class="sidebar-box">
+                <h2><span id="lastVisit"></span></h2>
+            </section>
+            <section class="sidebar-box">
+                <h2>Demographics</h2>
+                <p>Population: 2,304,580</p>
+                <p>People Ages 18-65: 57.1%</p>
+                <p>Households: 878,906</p>
+                <p>Median Gross Rent: $1,136</p>
+                <p>Median Household income: $56,019</p>
+                <p>All Employer Firms: 55,378</p>
+            </section>
+            <section class="sidebar-box">
+                <h2>What Makes Us Stand Out?</h2>
+                <h3>1. Business-Friendly Environment</h3>
+                <p>Houston prides itself on being one of the most business-friendly cities in the United States. It has no state or local income tax, which makes it an attractive destination for entrepreneurs and corporations.</p>
+                <h3>2. Energy Hub</h3>
+                <p>Houston is often referred to as the "Energy Capital of the World." It hosts the headquarters of numerous energy giants and is a global leader in energy research, production, and distribution.</p>
+                <h3>3. Quality of Life</h3>
+                <p>Houston offers an exceptional quality of life with a low cost of living, excellent healthcare facilities, world-class cultural institutions, and a diverse culinary scene. Its warm climate, affordable housing, and rich cultural experiences make it an appealing destination for both employees and business owners.</p>
+                <h3>4. Talented Workforce</h3>
+                <p>Houston is home to a highly educated and diverse workforce. With over 60 colleges and universities in the Greater Houston area, businesses can tap into a pool of skilled professionals across various fields.</p>
+                <h3>5. Infrastructure and Connectivity</h3>
+                <p>Houston boasts a well-developed infrastructure with extensive road networks, a major international airport, and a growing public transportation system. Its strategic location enables businesses to efficiently reach customers, suppliers, and partners, both domestically and globally.</p>
+            </section>
+        </section>
+        <section id="images">
+            <h3>Booming Economy</h3>
+            <img src="images/skyview.webp" alt="Skyline view of Downtown Houston" loading="lazy" width="600" height="393">
+            <h3>Beautiful Infrastructure</h3>
+            <img src="images/night-view.webp" alt="Downtown Houston" loading="lazy" width="600" height="449">
+            <h3>Reliable Transportation System</h3>
+            <img src="images/train.webp" alt="Houston Metro" loading="lazy" width="600" height="545">
+            <h3>Events going on every day!</h3>
+            <img src="images/rodeo.webp" alt="Houston Rodeo" loading="lazy" width="600" height="400">
+            <h3>Hustle and Bustle of City Life</h3>
+            <img src="images/street-view.webp" alt="View of People Walking Accross Street" loading="lazy" width="600" height="400">
+            <h3>Never run out of things to do!</h3>
+            <img src="images/toyota-center.webp" alt="Skyview of the Toyota Center" loading="lazy" width="600" height="429">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id='currentYear'></span> Emilio Ordonez Guerrero | Chamber Project WDD 230 | Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

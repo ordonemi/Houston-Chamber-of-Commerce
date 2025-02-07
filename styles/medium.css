@@ -1,0 +1,39 @@
+@media screen and (min-width: 800px){
+    .navigation {
+        flex-direction: row;
+        padding: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation li a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .hero button {
+        position: absolute;
+        top: 30px;
+        right: 42%
+    }
+
+    /* discover page html */
+
+    #discover {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+    }
+}
